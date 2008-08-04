@@ -1,6 +1,6 @@
 ---
 name: Iterator-Diamond
-version: 0.01
+version: 0.02
 author:
   - 'Johan Vromans <jv@cpan.org>'
 abstract: Iterate through the files from ARGV
@@ -8,11 +8,15 @@ license: perl
 resources:
   license: http://dev.perl.org/licenses/
 build_requires:
+  File::Spec: 0
   Test::More: 0
 provides:
   Iterator::Diamond:
     file: lib/Iterator/Diamond.pm
-    version: 0.01
+    version: 0.02
+  Iterator::Files:
+    file: lib/Iterator/Files.pm
+    version: 0.02
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
